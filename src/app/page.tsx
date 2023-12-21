@@ -1,6 +1,7 @@
+import Link from 'next/link'
 
 
-export default function Home() {
+export default function Home({menus}) {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <section className="w-full ">
@@ -10,7 +11,7 @@ export default function Home() {
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl text-slate-300 font-bold">Hello there</h1>
       <p className="mb-5 text-slate-200">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button className="btn btn-primary">Get Menu</button>
+      <button className="btn btn-primary"><Link href="/menu">Get Menu</Link></button>
     </div>
   </div>
 </div>
